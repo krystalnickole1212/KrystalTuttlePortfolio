@@ -14,8 +14,15 @@ body {
     color: #0b2a2e;
     font-family: Helvetica, Arial, sans-serif;
     background-color: rgb(237, 252, 250);
+    
   }
 
+
+  main{
+    width: 80vw;
+    margin: 0 auto 200px;
+    padding-bottom: 30px;
+  }
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -91,16 +98,35 @@ header {
   }
 
 
-.about-me{
+.about-me-container{
+width: 80%;
+margin: auto;
 
 }
 
+.about-me-header{
+  text-align: center;
+}
 
-.column(
-    float: left;
+.about-me-content{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-me-text{
+  margin: 50px;
+
+}
+
+.column{
+    flex:left; 
     width: 50%;
     padding: 15px;
-)
+}
+
+.row{
+  display: flex;
+}
 
   .project p{
         color: blue; 
@@ -120,6 +146,18 @@ header {
     background-color: rgb(70, 123, 192);
     color: white;
     text-align: center;
+  }
+
+
+  .contact-info{
+    margin-bottom: 10vh;
+  }
+  
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
   }
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
